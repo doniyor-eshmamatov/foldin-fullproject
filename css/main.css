@@ -398,4 +398,49 @@ p {
   max-width: 1560px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.site-header {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.site-header__inner {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item + .nav__item {
+  margin-left: 40px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #252D35;
+}
+
+.menu-button {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
